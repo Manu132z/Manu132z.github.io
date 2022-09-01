@@ -35,7 +35,8 @@ main {
 }
 #header nav a {
     margin: 20px;
-    text-decoration:underline dotted;
+    text-decoration:none;
+    border-bottom: 2px dotted black;
     color: black;
 }
 #inicio, #proyectos {
