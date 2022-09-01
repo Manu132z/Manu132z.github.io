@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+main {
+    position: relative;
+    margin: 0 auto;
+    width: 80vw;
+    top: 100px;
+    margin-bottom: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1em;
+}
+#contacto {
+    width:  80vw;
+    margin: 0 auto;
+}
+#header {
+    position: fixed;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 10vw ;
+    align-items: center;  
+    font-family: monospace; 
+    font-size: 1.5em;
+    background-color: white;
+    z-index: 1;
+    top: 0;
+}
+#header nav {
+    display: flex;
+    align-items: center;
+}
+#header nav a {
+    margin: 20px;
+    text-decoration:underline dotted;
+    color: black;
+}
+#inicio, #proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 5vh auto 15vh;
+}
+#proyectos {
+    margin: 15vh 0;
+}
+
+#inicio p,#proyectos p{
+    padding: 0 12vw;
+    margin: 10vh 0;
+}
+#proyectos a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#inicio img{
+    width: 15vw;
+    border-radius: 10%;
+}
+#icons-tech {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#icons-tech img{
+    width: 8vw;
+    margin: 2vw;
+    transition: transform 0.5s;
+}
+#contacto {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 6vw;
+    color: white;
+    font-family: monospace;
+    font-size: 1.5em;
+    margin-top: 25vh;
+}
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.info div {
+    margin: 0 10vw;
+}
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    margin: 0;
+}
+#contact-info img,#contact-info p {
+    margin: 2vw;
+}
+#contact-info h2 {
+    border-bottom: 2px dotted white;
+}
+#social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#social-icons a {
+    margin: 2vw;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    transition: transform 0.3s;
+}
+hr {
+    border: 0px;
+    border-bottom: 4px dotted black;
+}
+#header nav a:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+#icons-tech img:hover{
+    transform: rotate(30deg);
+}
+#social-icons a:hover{
+    transform: scale(1.3)
+}
+
+@media (max-width: 768px){
+    #header {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+    }
+    #header nav {
+        margin: 0 auto;
+    }
+    #header nav a {
+        margin: 4vw;
+    }
+    main {
+        margin-top: 10vh;
+    }
+    #inicio .photo {
+        width: 45vw;
+    }
+    #icons-tech img{
+        width: 20vw;
+    }
+    #inicio p,#proyectos p{
+        padding: 0 6vw;
+        margin: 6vh 0;
+    }
+    #inicio,#proyectos {
+        margin: 6vh 0;
+    }
+    #contacto .info {
+        flex-direction: column;
+    }
+    #contacto {
+        margin-top: 5vh;
+    }
+    #social-icons a{
+        margin: auto 6vw;
+    }
+    #contacto div a {
+        margin: 3vh;
+    }
+    #contact-info div p {
+        margin: 3vh auto;
+    }
+    .info {
+        margin: 0;
+    }
+}
