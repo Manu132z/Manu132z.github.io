@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+html {
+    background-color: rgb(3, 92, 224);
+}
+main {
+    position: relative;
+    margin: 0 auto;
+    width: 85vw;
+    top: 100px;
+    margin-bottom: 100px;
+    font-size: 1.3em;
+    padding: 30px;
+    border-radius: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: aliceblue;
+}
+#contacto {
+    width:  80vw;
+    margin: 0 auto;
+}
+#header {
+    position: fixed;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content:space-between;
+    padding: 35px 10vw ;
+    align-items: center;  
+    font-family: 'Overpass Mono', monospace;
+    font-size: 1.2em;
+    background-color: rgb(213, 223, 231);
+    z-index: 1;
+    top: 0;
+    box-shadow: 1px 0px 40px rgba(0, 0, 0, 0.4);
+    border-radius: 0 0 10px 10px;
+}
+#header .logo{
+    font-size: 26px;
+}
+#header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header nav a {
+    margin: 15px;
+    text-decoration: none;
+    border-bottom: 2px dotted black;
+    color: black;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5vh auto 15vh;
+}
+section p {
+    margin: 25px auto 25px auto;
+    width: 80%;
+}
+section img {
+    border-radius: 20px;
+}
+#contacto {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 3vw;
+    color: white;
+    font-family: monospace;
+    font-size: 1.5em;
+    margin-top: 25vh;
+    height: 60vh;
+}
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.info div {
+    margin: 0 10vw;
+}
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    margin: 0;
+}
+#contact-info img {
+    padding-bottom: 40px;
+}
+#contact-info img,#contact-info p {
+    margin: 2vw;
+}
+#contact-info h2 {
+    border-bottom: 2px dotted white;
+}
+#social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#social-icons a {
+    margin: 2vw;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    transition: transform 0.3s;
+}
+hr {
+    border: 0px;
+    border-bottom: 4px dotted black;
+}
+#header nav a:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+#icons-tech img:hover{
+    transform: rotate(30deg);
+}
+#social-icons a:hover{
+    transform: scale(1.3)
+}
+#extra {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    z-index: 2;
+    transition: transform 0.5s ease;
+}
+#extra a {
+    color: black;
+    text-decoration: none;
+}
+#extra:hover{
+    transform: scale(1.2);
+}
+@media (max-width: 768px){
+    #header {
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+        font-size: 1.2em;
+        width: 100vw;
+        
+    }
+    #header nav {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+        overflow: scroll;
+    }
+    #header nav a {
+        margin: 4vw;
+        width: 100%;
+        text-align: center;
+        font-size: 0.9em;
+        flex-direction: column;
+    }
+    main {
+        margin-top: 5vh;
+        font-size: 1.2em;
+        width: 95vw;
+        padding: 5px;
+    }
+    #inicio h2 {
+        font-size: 2em;
+        
+    }
+    #info{
+        width: 800px;
+        height: 200px;
+        overflow: scroll;
+    }
+    #inicio, #problematicas {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        height: auto;
+    }
+    #cajas {
+        flex-direction: column;
+        width: 80vw;
+    }
+    #pruebas {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    #Actividades {
+        margin-bottom: 10px;
+    }
+    #contacto .info {
+        flex-direction: column;
+    }
+    #contacto {
+        margin-top: 5vh;
+        width: 100%;
+    }
+    #social-icons a{
+        margin: auto 6vw;
+    }
+    #contacto div a {
+        margin: 3vh;
+    }
+    #contact-info div p {
+        margin: 3vh auto;
+    }
+    .info {
+        margin: 0;
+    }
+    #extra {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        text-align: left;
+        border-radius: 50%;
+        color: black;
+    }
+}
+
